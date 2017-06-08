@@ -10,8 +10,6 @@ import cucumber.api.java.en.When;
 
 import java.util.Date;
 
-import org.bigtester.ate.AbstractCucumberTestStepDefs;
-
 import static org.testng.Assert.assertEquals;
 /**
  * Created by amit.rawat on 21/12/15.
