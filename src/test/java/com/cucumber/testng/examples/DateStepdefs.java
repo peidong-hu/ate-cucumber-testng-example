@@ -38,6 +38,7 @@ public class DateStepdefs extends BaseStepDefs{
     public void today_is(@Format("yyyy-MM-dd") Date date) {
         calculator = new DateCalculator(date);
         scenario.write("<b>This is test message</b>");
+        super.runCucumberStep("stepOpenHomePage", "applyQAJob", "easyApply");
     }
 
     @When("^I ask if (.+) is in the past$")
