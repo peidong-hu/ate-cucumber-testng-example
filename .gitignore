@@ -1,2 +1,6 @@
 /target/
 /test-output/
+/data/
+/generated-code/
+/logs/
+/temp_data/

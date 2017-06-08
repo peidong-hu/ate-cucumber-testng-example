@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+    <windows>
+        <driver id="internetexplorer">
+            <version id="2.48.0">
+                <bitrate sixtyfourbit="true">
+                    <filelocation>http://selenium-release.storage.googleapis.com/2.48/IEDriverServer_x64_2.48.0.zip</filelocation>
+                    <hash>abd88efa0f33d238cc786363d1c7c2108633340b</hash>
+                    <hashtype>sha1</hashtype>
+                </bitrate>
+                <bitrate thirtytwobit="true">
+                    <filelocation>http://selenium-release.storage.googleapis.com/2.48/IEDriverServer_Win32_2.48.0.zip</filelocation>
+                    <hash>185e84c2cec5de00be802a1cc3a472ed678c65b0</hash>
+                    <hashtype>sha1</hashtype>
+                </bitrate>
+            </version>
+        </driver>
+        <driver id="googlechrome">
+            <version id="2.20">
+                <bitrate thirtytwobit="true" sixtyfourbit="true">
+                    <filelocation>http://chromedriver.storage.googleapis.com/2.20/chromedriver_win32.zip</filelocation>
+                    <hash>3ce46ef6ec89e48707065550b1ecb5674b1dc548</hash>
+                    <hashtype>sha1</hashtype>
+                </bitrate>
+            </version>
+        </driver>
+         <driver id="operachromium">
+            <version id="0.2.2">
+                <bitrate sixtyfourbit="true">
+                    <filelocation>https://github.com/operasoftware/operachromiumdriver/releases/download/v0.2.2/operadriver_win64.zip</filelocation>
+                    <hash>8b84d334ca6dc5e30c168d8df080c1827e4c6fdb</hash>
+                    <hashtype>sha1</hashtype>
+                </bitrate>      
+                <bitrate thirtytwobit="true">
+                    <filelocation>https://github.com/operasoftware/operachromiumdriver/releases/download/v0.2.2/operadriver_win32.zip</filelocation>
+                    <hash>daa9ba52eeca5ea3cb8a9020b85642ec047e9890</hash>
+                    <hashtype>sha1</hashtype>
+                </bitrate>    
+            </version>
+        </driver>
+    </windows>
+    <linux>
+        <driver id="googlechrome">
+            <version id="2.20">
+                <bitrate sixtyfourbit="true">
+                    <filelocation>http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux64.zip</filelocation>
+                    <hash>d48a26979a7d80fbd0ea1399a4913741c7017b0b</hash>
+                    <hashtype>sha1</hashtype>
+                </bitrate>
+                <bitrate thirtytwobit="true">
+                    <filelocation>http://chromedriver.storage.googleapis.com/2.20/chromedriver_linux32.zip</filelocation>
+                    <hash>f93b5e7b8bd8e9b22218d0b6e93a05fa327de021</hash>
+                    <hashtype>sha1</hashtype>
+                </bitrate>
+            </version>
+        </driver>
+        <driver id="operachromium">
+            <version id="0.2.2">
+                <bitrate sixtyfourbit="true">
+                    <filelocation>https://github.com/operasoftware/operachromiumdriver/releases/download/v0.2.2/operadriver_linux64.zip</filelocation>
+                    <hash>c207c6916e20ecbbc7157e3bdeb4737f14f15fe3</hash>
+                    <hashtype>sha1</hashtype> 
+                </bitrate>
+                <bitrate thirtytwobit="true">
+                    <filelocation>https://github.com/operasoftware/operachromiumdriver/releases/download/v0.2.2/operadriver_linux32.zip</filelocation>
+                    <hash>8b0b92a870a1b4ba619eb0b85ec587caa2942e5b</hash>
+                    <hashtype>sha1</hashtype>
+                </bitrate>
+            </version>
+        </driver>
+    </linux>
+    <osx>
+        <driver id="googlechrome">
+            <version id="2.20">
+                <bitrate thirtytwobit="true" sixtyfourbit="true">
+                    <filelocation>http://chromedriver.storage.googleapis.com/2.20/chromedriver_mac32.zip</filelocation>
+                    <hash>a6af30e9deaf37d615c53a908a880c1735772a20</hash>
+                    <hashtype>sha1</hashtype>
+                </bitrate>
+            </version>
+        </driver>
+       <driver id="operachromium">
+            <version id="0.2.2">
+                <bitrate sixtyfourbit="true">
+                    <filelocation>https://github.com/operasoftware/operachromiumdriver/releases/download/v0.2.2/operadriver_mac64.zip</filelocation>
+                    <hash>d58a3b676dda7ede5c38e5df218e7c619495c4ed</hash>
+                    <hashtype>sha1</hashtype> 
+                </bitrate>
+                <bitrate thirtytwobit="true">
+                    <filelocation>https://github.com/operasoftware/operachromiumdriver/releases/download/v0.1.0/operadriver_mac32.zip</filelocation>
+                    <hash>7ab79a1c70bb0f5998b9c5c8d08160ef86b618e9</hash>
+                    <hashtype>sha1</hashtype>
+                </bitrate>
+            </version>
+        </driver>
+    </osx>
+</root>
