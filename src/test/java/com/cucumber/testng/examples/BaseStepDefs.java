@@ -11,6 +11,8 @@ import cucumber.api.java.Before;
  */
 public class BaseStepDefs extends AbstractCucumberTestStepDefs{
 	protected Scenario scenario = null;
+	
+	
 	    /**
 	 * {@inheritDoc}
 	 */
@@ -19,14 +21,17 @@ public class BaseStepDefs extends AbstractCucumberTestStepDefs{
 		
 		return scenario;
 	}
-		/**
-		 * {@inheritDoc}
-		 */
-		@Override
-		public String getAteGlueTestProjectXmlFilePath() {
-			// TODO Auto-generated method stub
-			return "indeedJobApplication/testproject.xml";
-		}
+	/**
+	 * {@inheritDoc}
+	 */
+	@Override
+	public String getAteGlueTestProjectXmlFilePath() {
+		// TODO Auto-generated method stub
+		return "indeedJobApplication/testproject.xml";
+	}
 	
+	protected void cleanUp() {
+		closeAteExecutionContext();
+	}
 	
 }

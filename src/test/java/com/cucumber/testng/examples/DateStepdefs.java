@@ -29,6 +29,7 @@ public class DateStepdefs extends BaseStepDefs{
 
     @After
     public void after(Scenario scenario) {
+    	super.cleanUp();
         System.out.println("This is after Scenario: " + scenario.getName().toString());
     }
 
