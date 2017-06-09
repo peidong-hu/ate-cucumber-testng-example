@@ -39,7 +39,7 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
     public void of(String jobTitle, String location) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
-    	super.runCucumberStep("stepRepeatApplySamePageJobs", "applyQAJob", "easyApply");
+//    	super.runCucumberStep("stepRepeatApplySamePageJobs", "applyQAJob", "easyApply");
     }
 
     @Given("^the following search data$")
@@ -49,6 +49,7 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
         // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
         // E,K,V must be a scalar (String, Integer, Date, enum etc)
         //throw new PendingException();
+    	super.runCucumberStep("stepRepeatApplySamePageJobs", "applyQAJob", "easyApply", arg1);
     	System.out.println(arg1.toString());
     }
 
