@@ -1,9 +1,14 @@
 @calculator
 Feature: Feature1
-  This is the description for Feature1
+  indeed.ca job search
 
-  Scenario: Determine past date one day before today
-    Given today is 2015-12-20
-    When I ask if Dec 19, 2015 is in the past
-    Then the result should be yes
+  Scenario: search on home page
+    Given "homepage" of "indeed.ca"
+    	And the following search data
+    	|jobTitle     |location    |
+    	|QA Automation|Montreal, QC|
+    	|QA Analyst   |Toronto, ON |
+    When type in "jobTitle" and "location"
+    	And click "Search" button
+    Then there should be 20 non-ads jobs listed
 
