@@ -49,7 +49,7 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
         // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
         // E,K,V must be a scalar (String, Integer, Date, enum etc)
         //throw new PendingException();
-    	super.runCucumberStep("stepRepeatApplySamePageJobs", "applyQAJob", "easyApply", arg1);
+    	super.runCucumberStep("stepRepeatApplyOtherKeywordsJobs", "applyQAJob", "easyApply", arg1);
     	System.out.println(arg1.toString());
     }
 

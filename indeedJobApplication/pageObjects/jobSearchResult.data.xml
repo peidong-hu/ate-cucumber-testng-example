@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataset>
 
-<STEPERELEMENTEXISTENCE FirstTimeExecution= "Yes"
+<STEPERELEMENTEXISTENCE firstTimeExecution= "Yes"
 		ElementFindBy="xpath" ElementFindByValue="//span[contains(., 'your account is created!')]"
 		AssertPriority="high" PageName="adminhomepage" StepErSetId="adminregistersuccessvid"
 		TestDataContext_IdColumn="5" />

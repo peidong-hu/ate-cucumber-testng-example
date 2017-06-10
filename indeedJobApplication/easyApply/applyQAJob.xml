@@ -182,16 +182,16 @@
 			targetStep="false" optionalStep="true" elementActionDef="eadAcceptAlertInFocus">
 		</ate:elementStep>
 		
-		<ate:repeatStep id="stepRepeatApplySamePageJobs" startStepName="stepClickJobLink" numberOfIterations="9" endStepName="stepAcceptAlertInFocus" stepName="stepRepeatApplySamePageJobs" targetStep="false"/>
+<!-- 		<ate:repeatStep id="stepRepeatApplySamePageJobs" startStepName="stepClickJobLink" numberOfIterations="9" endStepName="stepAcceptAlertInFocus" stepName="stepRepeatApplySamePageJobs" targetStep="false"/> -->
 		
-		<ate:elementStep id="stepClickPagingNumber"
-			stepDescription="stepClickPagingNumber"
-			stepName="stepClickPagingNumber" targetStep="false"
-			optionalStep="true" elementActionDef="eadClickPagingNumber"
-			correlatedOptionalStepsUtilInclusive="stepRepeatApplyOtherPageJobs">
-		</ate:elementStep>
+<!-- 		<ate:elementStep id="stepClickPagingNumber" -->
+<!-- 			stepDescription="stepClickPagingNumber" -->
+<!-- 			stepName="stepClickPagingNumber" targetStep="false" -->
+<!-- 			optionalStep="true" elementActionDef="eadClickPagingNumber" -->
+<!-- 			correlatedOptionalStepsUtilInclusive="stepRepeatApplyOtherPageJobs"> -->
+<!-- 		</ate:elementStep> -->
 		
-		<ate:repeatStep id="stepRepeatApplyOtherPageJobs" startStepName="stepClickJobLink" numberOfIterations="2" endStepName="stepClickPagingNumber" stepName="stepRepeatApplyOtherPageJobs" targetStep="false"/>
+<!-- 		<ate:repeatStep id="stepRepeatApplyOtherPageJobs" startStepName="stepClickJobLink" numberOfIterations="2" endStepName="stepClickPagingNumber" stepName="stepRepeatApplyOtherPageJobs" targetStep="false"/> -->
 		
 		<ate:repeatStep id="stepRepeatApplyOtherKeywordsJobs" startStepName="stepOpenHomePage" numberOfIterations="2" endStepName="stepRepeatApplyOtherPageJobs" stepName="stepRepeatApplyOtherKeywordsJobs" targetStep="false"/>
 		
