@@ -27,7 +27,7 @@
 	<ate:operaDriver    />
 	<ate:htmlUnitDriver />
       -->
-	<ate:chromeDriver  preserveCookies="true" />
+	<ate:chromeDriver  preserveCookies="false" />
 
 	<ate:testCase id="testcase" testCaseName="apply easily-apply job.">
 
@@ -193,7 +193,7 @@
 		
 <!-- 		<ate:repeatStep id="stepRepeatApplyOtherPageJobs" startStepName="stepClickJobLink" numberOfIterations="2" endStepName="stepClickPagingNumber" stepName="stepRepeatApplyOtherPageJobs" targetStep="false"/> -->
 		
-		<ate:repeatStep id="stepRepeatApplyOtherKeywordsJobs" startStepName="stepOpenHomePage" numberOfIterations="2" endStepName="stepRepeatApplyOtherPageJobs" stepName="stepRepeatApplyOtherKeywordsJobs" targetStep="false"/>
+		<ate:repeatStep id="stepRepeatApplyOtherKeywordsJobs" startStepName="stepOpenHomePage" numberOfIterations="2" endStepName="stepAcceptAlertInFocus" stepName="stepRepeatApplyOtherKeywordsJobs" targetStep="false"/>
 		
 		<ate:lastStep id="mylaststep" stepName="mylaststep"
 			stepDescription="last step close browser" targetStep="false"
