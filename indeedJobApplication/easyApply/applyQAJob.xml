@@ -27,7 +27,7 @@
 	<ate:operaDriver    />
 	<ate:htmlUnitDriver />
       -->
-	<ate:chromeDriver  preserveCookies="false" />
+	<ate:chromeDriver  preserveCookies="false"/>
 
 	<ate:testCase id="testcase" testCaseName="apply easily-apply job.">
 
