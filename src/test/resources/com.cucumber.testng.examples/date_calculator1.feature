@@ -8,7 +8,7 @@ Feature: Feature1
     	|JobSearchKeyWord   |location    |
     	|QA Automation		|Montreal, QC|
     	|QA Analyst   		|Toronto, ON |
-    When type in "jobTitle" and "location"
+    When type in JobSearchKeyWord and location "Toronto, ON"
     	And click "Search" button
     Then there should be 20 non-ads jobs listed
 
