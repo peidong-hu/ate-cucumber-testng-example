@@ -32,11 +32,11 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
     }
 
     
-    @Given("^\"([^\"]*)\" of \"([^\"]*)\"$")
-    public void of(String jobTitle, String location) throws Throwable {
+    @Given("^homepage$")
+    public void homepage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
-//    	super.runCucumberStep("stepRepeatApplySamePageJobs", "applyQAJob", "easyApply");
+    	super.runCucumberStep("stepOpenHomePage", "applyQAJob", "easyApply");
     }
 
     @Given("^the following search data$")
@@ -56,7 +56,7 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
     	ActionNameValuePair typeInLocationValuePair = new ActionNameValuePair("eaTypeWindsor", location);
-    	super.runCucumberStep("stepRepeatApplyOtherKeywordsJobs", "applyQAJob", "easyApply", this.jobTitleLocations, typeInLocationValuePair);
+    	//super.runCucumberStep("stepRepeatApplyOtherKeywordsJobs", "applyQAJob", "easyApply", this.jobTitleLocations, typeInLocationValuePair);
     }
 
     @When("^click \"([^\"]*)\" button$")

@@ -3,7 +3,7 @@ Feature: Feature1
   indeed.ca job search
 
   Scenario: search on home page
-    Given "homepage" of "indeed.ca"
+    Given homepage
     	And the following search data
     	|JobSearchKeyWord   |location    |
     	|QA Automation		|Montreal, QC|
