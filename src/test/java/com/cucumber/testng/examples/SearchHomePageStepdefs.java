@@ -36,7 +36,7 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
     public void homepage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
-    	super.runCucumberStep("stepOpenHomePage", "applyQAJob", "easyApply");
+    	System.out.println("homepage test result: " + super.runCucumberStep("stepOpenHomePage", "applyQAJob", "easyApply"));
     }
 
     @Given("^the following search data$")
