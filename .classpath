@@ -28,5 +28,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry combineaccessrules="false" kind="src" path="/org.bigtester.ate.core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cucumber-core"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/cucumber-java"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

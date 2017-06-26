@@ -39,9 +39,9 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
     public void homepage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
-		assertThat(
-				super.runCucumberStep(new AteProjectFilter("easyApply", "applyQAJob","stepOpenHomePage"
-						)), not(StepResultStatus.PASS));
+//		assertThat(
+//				super.runCucumberStep(new AteProjectFilter("easyApply", "applyQAJob","stepOpenHomePage"
+//						)), not(StepResultStatus.PASS));
     }
 
     @Given("^the following search data$")
@@ -70,11 +70,11 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
         //throw new PendingException();
     }
 
-    @Then("^there should be (\\d+) non-ads jobs listed$")
-    public void there_should_be_non_ads_jobs_listed(int arg1) throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        //throw new PendingException();
-    }
+//    @Then("^there should be (\\d+) non-ads jobs listed$")
+//    public void there_should_be_non_ads_jobs_listed(int arg1) throws Throwable {
+//        // Write code here that turns the phrase above into concrete actions
+//        //throw new PendingException();
+//    }
 
 	
 }
