@@ -35,7 +35,7 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
     }
 
     
-    @Given("^homepage$")
+    //@Given("^homepage$")
     public void homepage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
@@ -44,7 +44,7 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
 //						)), not(StepResultStatus.PASS));
     }
 
-    @Given("^the following search data$")
+    //@Given("^the following search data$")
     public void the_following_search_data(List<Map<String,String>> arg1) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         // For automatic transformation, change DataTable to one of
@@ -56,7 +56,7 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
     	//System.out.println(arg1.toString());
     }
 
-    @When("^type in JobSearchKeyWord and location \"([^\"]*)\"$")
+    //@When("^type in JobSearchKeyWord and location \"([^\"]*)\"$")
     public void type_in_and(String location) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
@@ -64,7 +64,7 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
     	//super.runCucumberStep("stepRepeatApplyOtherKeywordsJobs", "applyQAJob", "easyApply", this.jobTitleLocations, typeInLocationValuePair);
     }
 
-    @When("^click \"([^\"]*)\" button$")
+    //@When("^click \"([^\"]*)\" button$")
     public void click_button(String arg1) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
