@@ -15,7 +15,7 @@
 
 	<import resource="../pageObjects/indeedCaHomepage.xml" />
 	
-	<ate:stepTypeServiceDefinition id="qaJobSearchService" stepName="qaJobSearchService" targetStep="false">
+	<ate:stepTypeServiceDefinition  cucumberStepType="GIVEN" id="qaJobSearchService" stepName="qaJobSearchService" targetStep="false">
 
 		<ate:elementStep id="stepTypeInSearchKeyWordQA"
 			stepDescription="type in search key word QA" stepName="typeInSearchKeyWordQA"

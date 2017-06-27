@@ -15,7 +15,7 @@
 
 	<import resource="../pageObjects/applyNowPage.xml" />
 	
-	<ate:stepTypeServiceDefinition id="svcFilloutJob" stepName="svcFilloutJob" targetStep="false">
+	<ate:stepTypeServiceDefinition cucumberStepType="GIVEN" id="svcFilloutJob" stepName="svcFilloutJob" stepDescription="homepage" targetStep="false">
 
 				<ate:elementStep id="stepFilloutApplicantName"
 			stepDescription="stepFilloutApplicantName" stepName="stepFilloutApplicantName"
