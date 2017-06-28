@@ -21,14 +21,14 @@ import org.bigtester.ate.model.cucumber.ActionNameValuePair;
 public class SearchHomePageStepdefs extends BaseStepDefs{
 	private List<Map<String,String>> jobTitleLocations;
    
-    @Before
+    //@Before
     public void beforescenario(Scenario scenario){
         this.scenario = scenario;
         System.out.println("This is before Scenario: " + scenario.getId().toString());
     }
 
 
-    @After
+    //@After
     public void after(Scenario scenario) {
     	super.cleanUp();
         System.out.println("This is after Scenario: " + scenario.getName().toString());
