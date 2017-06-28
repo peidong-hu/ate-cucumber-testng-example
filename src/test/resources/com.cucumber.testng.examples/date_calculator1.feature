@@ -3,8 +3,7 @@ Feature: Feature1
   indeed.ca job search
 
   Scenario: search on home page
-    Given homepage
-    	And the following search data
+    Given the following search data
     	|JobSearchKeyWord   |location    |
     	|QA Automation		|Montreal, QC|
     	|QA Analyst   		|Toronto, ON |
