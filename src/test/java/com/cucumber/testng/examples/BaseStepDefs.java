@@ -3,17 +3,14 @@ package com.cucumber.testng.examples;
 import org.bigtester.ate.AbstractCucumberTestStepDefs;
 
 import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 
 /**
  * Created by amit.rawat on 21/12/15.
  */
 public class BaseStepDefs extends AbstractCucumberTestStepDefs{
-	protected Scenario scenario = null;
+	protected Scenario scenario = null;	
 	
-	
-	    /**
+	/**
 	 * {@inheritDoc}
 	 */
 	@Override
@@ -21,6 +18,7 @@ public class BaseStepDefs extends AbstractCucumberTestStepDefs{
 		
 		return scenario;
 	}
+	
 	/**
 	 * {@inheritDoc}
 	 */
