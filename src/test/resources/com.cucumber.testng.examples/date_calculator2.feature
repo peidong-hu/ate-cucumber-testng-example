@@ -1,3 +1,4 @@
+@calculator
 Feature: Feature2
   This is the description for Feature2
 
