@@ -9,7 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by amit.rawat on 21/12/15.
+ * Created by amit.rawat on 21/12/15. 
+ * Modified by Jun Yang on 14/09/2017
  */
 public class GenerateReport {
     public static void GenerateMasterthoughtReport(){
