@@ -21,30 +21,31 @@ import org.bigtester.ate.model.cucumber.ActionNameValuePair;
 public class SearchHomePageStepdefs extends BaseStepDefs{
 	private List<Map<String,String>> jobTitleLocations;
    
-    @Before
+    //@Before
     public void beforescenario(Scenario scenario){
         this.scenario = scenario;
         System.out.println("This is before Scenario: " + scenario.getId().toString());
     }
 
 
-    @After
+    //@After
     public void after(Scenario scenario) {
     	super.cleanUp();
         System.out.println("This is after Scenario: " + scenario.getName().toString());
     }
 
     
-    @Given("^homepage$")
+    //@Given("^homepage$")
     public void homepage() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         //throw new PendingException();
 //		assertThat(
 //				super.runCucumberStep(new AteProjectFilter("easyApply", "applyQAJob","stepOpenHomePage"
 //						)), not(StepResultStatus.PASS));
+    	//super.runCucumberStep(new AteProjectFilter("easyApply", "applyQAJob","stepOpenHomePage"));
     }
 
-    @Given("^the following search data$")
+    //@Given("^the following search data$")
     public void the_following_search_data(List<Map<String,String>> arg1) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
         // For automatic transformation, change DataTable to one of
@@ -53,7 +54,7 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
         //throw new PendingException();
     	jobTitleLocations = arg1;
     	
-    	//System.out.println(arg1.toString());
+    	System.out.println(arg1.toString());
     }
 
     @When("^type in JobSearchKeyWord and location \"([^\"]*)\"$")
@@ -62,6 +63,7 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
         //throw new PendingException();
     	ActionNameValuePair typeInLocationValuePair = new ActionNameValuePair("eaTypeWindsor", location);
     	//super.runCucumberStep("stepRepeatApplyOtherKeywordsJobs", "applyQAJob", "easyApply", this.jobTitleLocations, typeInLocationValuePair);
+    	//super.runCucumberStep(new AteProjectFilter("easyApply", "applyQAJob", "stepRepeatApplyOtherKeywordsJobs"), this.jobTitleLocations, typeInLocationValuePair);
     }
 
     @When("^click \"([^\"]*)\" button$")
@@ -70,11 +72,12 @@ public class SearchHomePageStepdefs extends BaseStepDefs{
         //throw new PendingException();
     }
 
-//    @Then("^there should be (\\d+) non-ads jobs listed$")
-//    public void there_should_be_non_ads_jobs_listed(int arg1) throws Throwable {
-//        // Write code here that turns the phrase above into concrete actions
-//        //throw new PendingException();
-//    }
+    /*@Then("^there should be (\\d+) non-ads jobs listed$")
+    public void there_should_be_non_ads_jobs_listed(int arg1) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        //throw new PendingException();             
+         
+    }*/
 
 	
 }

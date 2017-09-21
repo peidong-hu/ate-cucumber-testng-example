@@ -27,6 +27,12 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry combineaccessrules="false" kind="src" path="/org.bigtester.ate.core"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/org.bigtester.ate.core"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/cucumber-ate"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

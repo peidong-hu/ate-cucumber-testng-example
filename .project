@@ -2,7 +2,7 @@
 <projectDescription>
 	<name>ate-cucumber-testng-example</name>
 	<comment></comment>
-	<projects>
+	<projects>		
 	</projects>
 	<buildSpec>
 		<buildCommand>

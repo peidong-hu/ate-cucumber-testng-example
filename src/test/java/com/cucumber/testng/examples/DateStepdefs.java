@@ -18,33 +18,33 @@ public class DateStepdefs extends BaseStepDefs{
     private String result;
     private DateCalculator calculator;
    
-    @Before
+    //@Before
     public void beforescenario(Scenario scenario){
         this.scenario = scenario;
         System.out.println("This is before Scenario: " + scenario.getId().toString());
     }
 
 
-    @After
+    //@After
     public void after(Scenario scenario) {
     	super.cleanUp();
         System.out.println("This is after Scenario: " + scenario.getName().toString());
     }
 
     
-    @Given("^today is (.+)$")
+    //@Given("^today is (.+)$")
     public void today_is(@Format("yyyy-MM-dd") Date date) {
         calculator = new DateCalculator(date);
         scenario.write("<b>This is test message</b>");
-        super.runCucumberStep(new AteProjectFilter("easyApply", "applyQAJob", "stepOpenHomePage" ));
+        //super.runCucumberStep(new AteProjectFilter("easyApply", "applyQAJob", "stepOpenHomePage" ));
     }
 
-    @When("^I ask if (.+) is in the past$")
+    //@When("^I ask if (.+) is in the past$")
     public void I_ask_if_date_is_in_the_past(Date date) {
         result = calculator.isDateInThePast(date);
     }
 
-    @Then("^the result should be (.+)$")
+    //@Then("^the result should be (.+)$")
     public void the_result_should_be(String expectedResult) {
         assertEquals(expectedResult, result);
     }

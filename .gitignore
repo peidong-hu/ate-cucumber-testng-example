@@ -4,3 +4,7 @@
 /generated-code/
 /logs/
 /temp_data/
+/browserdriver/windows/
+/browserdriver/osx/
+/browserdriver/linux/
+
