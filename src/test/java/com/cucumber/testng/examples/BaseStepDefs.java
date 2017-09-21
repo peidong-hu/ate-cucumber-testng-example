@@ -13,18 +13,17 @@ public class BaseStepDefs{
 	protected Scenario scenario = null;
 	
 	
-	    /**
+	/**
 	 * {@inheritDoc}
-	 */
-	
+	 */	
 	public Scenario getScenario() {
 		
 		return scenario;
 	}
+	
 	/**
 	 * {@inheritDoc}
-	 */
-	
+	 */	
 	public String getAteGlueTestProjectXmlFilePath() {
 		// TODO Auto-generated method stub
 		return "indeedJobApplication/testproject.xml";
