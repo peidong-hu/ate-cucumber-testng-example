@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
-                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+                             http://maven.apache.org/xsd/maven-4.0.0.xsd">                             
                              
     <modelVersion>4.0.0</modelVersion>
 
@@ -27,7 +27,7 @@
         <dependency>
             <groupId>info.cukes</groupId>
             <artifactId>cucumber-ate</artifactId>
-            <version>1.2.5</version>
+            <version>1.2.4</version>
             <scope>test</scope>
         </dependency>
 <!--         <dependency> -->
@@ -80,7 +80,7 @@
                     </suiteXmlFiles>
                     <forkCount>3</forkCount>
                     <reuseForks>true</reuseForks>
-                    <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
+                    <argLine>-Xmx1024m</argLine>
                 </configuration>
             </plugin>
             <plugin>
