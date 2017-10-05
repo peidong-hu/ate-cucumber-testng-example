@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:ate="http://www.bigtester.org/schema/ate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:aop="http://www.springframework.org/schema/aop"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   xmlns:ate="http://www.bigtester.org/schema/ate" 
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans 
                            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
                            http://www.springframework.org/schema/aop 
                            http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
@@ -18,6 +19,8 @@
 	<import resource="../pageObjects/jobSearchResult.xml" />
 	<import resource="../pageObjects/applyNowPage.xml" />
 	<import resource="../pageObjects/lastPage.xml" />
+	<import resource="../stepTypeServices/svcOpenHomePage.xml"/>
+	<import resource="../stepTypeServices/svcFilloutKeyWord.xml"/>	
 	
 	<!-- 
 	<ate:firefoxDriver  />  
@@ -31,28 +34,9 @@
 
 	<ate:testCase id="testcase" testCaseName="apply easily-apply job.">
 
-		<ate:homeStep id="stepOpenHomePage" stepName="stepOpenHomePage"
-			stepDescription="open indeed home page" targetStep="false"
-			pageObject="indeedCaHomepage" />
-
-		<ate:elementStep id="stepTypeInSearchKeyWordQA"
-			stepDescription="type in search key word QA" stepName="typeInSearchKeyWordQA"
-			optionalStep="false" targetStep="false" elementActionDef="eadTypeInSearchKeyWordQA">
-		</ate:elementStep>
-				
-		<ate:elementStep id="stepClearWhereText"
-			stepDescription="clear where text" stepName="clearWhereText"
-			targetStep="false" elementActionDef="eadClearTextInWhere"
-			>
-		</ate:elementStep>
-
+		<ate:stepTypeServiceReference id="stepSvcOpenHomePage" stepTypeServiceDefinitionID="svcOpenHomePage"/>
 		
-		<ate:elementStep id="stepTypeInWindsorOn"
-			stepDescription="type in search location, Windsor" stepName="stepTypeInWindsorOn"
-			targetStep="false" elementActionDef="eadTypeWindsorInWhere">
-		</ate:elementStep>
-		
-	
+		<ate:stepTypeServiceReference id="stepSvcFilloutKeyWord" stepTypeServiceDefinitionID="svcFilloutKeyWord"/>	
 		
 <!-- 		<ate:repeatStep id="stepRepeatApplySamePageJobs" startStepName="stepClickJobLink" numberOfIterations="9" endStepName="stepAcceptAlertInFocus" stepName="stepRepeatApplySamePageJobs" targetStep="false"/> -->
 		

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:ate="http://www.bigtester.org/schema/ate" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:aop="http://www.springframework.org/schema/aop"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   xmlns:ate="http://www.bigtester.org/schema/ate" 
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:aop="http://www.springframework.org/schema/aop"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans 
                            http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
                            http://www.springframework.org/schema/aop 
                            http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
@@ -18,7 +19,8 @@
 	<import resource="../pageObjects/jobSearchResult.xml" />
 	<import resource="../pageObjects/applyNowPage.xml" />
 	<import resource="../stepTypeServices/svcQaJobSearch.xml"/>
-	<import resource="../stepTypeServices/svcFilloutJob.xml"/>	
+	<import resource="../stepTypeServices/svcFilloutJob.xml"/>
+	<import resource="../stepTypeServices/svcOpenHomePage.xml"/>	
 	<import resource="../pageObjects/lastPage.xml" />
 	
 	<!-- 
@@ -33,11 +35,9 @@
 
 	<ate:testCase id="testcase" testCaseName="apply easily-apply job.">
 
-		<ate:homeStep id="stepOpenHomePage" stepName="stepOpenHomePage"
-			stepDescription="open indeed home page" targetStep="false"
-			pageObject="indeedCaHomepage" />
-
-		<ate:stepTypeServiceReference id="searchjobs" stepTypeServiceDefinitionID="qaJobSearchService"/>
+		<ate:stepTypeServiceReference id="stepSvcOpenHomePage" stepTypeServiceDefinitionID="svcOpenHomePage"/>		
+		
+		<ate:stepTypeServiceReference id="searchjobs" stepTypeServiceDefinitionID="svcQaJobSearch"/>
 		
 		<ate:elementStep id="stepClickJobLink"
 			stepDescription="stepClickJobLink" stepName="stepClickJobLink"
@@ -63,8 +63,7 @@
 			correlatedOptionalStepsUtilInclusive="stepSubmitResume">
 		</ate:elementStep>
 
-		<ate:stepTypeServiceReference id="stepSvcFilloutJob" stepTypeServiceDefinitionID="svcFilloutJob"/>
-		
+		<ate:stepTypeServiceReference id="stepSvcFilloutJob" stepTypeServiceDefinitionID="svcFilloutJob"/>		
 		
 		<ate:elementStep id="stepSubmitResume"
 			stepDescription="stepSubmitResume" stepName="stepSubmitResume"
