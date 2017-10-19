@@ -31,8 +31,8 @@
 	<ate:operaDriver    />
 	<ate:htmlUnitDriver />
       -->
-	<ate:chromeDriver  preserveCookies="true" startArguments="--disable-web-security --allow-file-access-from-files"/>
-
+    <ate:sauceLabDriver  userName="wpbx" accessKey="9aeb4feb-8dce-4a44-aeed-1cda938e5d8a" />
+    
 	<ate:testCase id="testcase" testCaseName="apply easily-apply job.">
 
 		<ate:stepTypeServiceReference id="stepSvcOpenHomePage" stepTypeServiceDefinitionID="svcOpenHomePage"/>		

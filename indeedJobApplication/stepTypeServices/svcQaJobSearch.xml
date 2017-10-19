@@ -16,7 +16,7 @@
 	<import resource="../pageObjects/indeedCaHomepage.xml" />
 	
 	<ate:stepTypeServiceDefinition
-	cucumberStepType="GIVEN" id="svcQaJobSearch" stepName="svcQaJobSearch"
+	cucumberStepType="WHEN" id="svcQaJobSearch" stepName="svcQaJobSearch"
 	stepDescription="^searchJob$" targetStep="false">
 
 		<ate:elementStep id="stepTypeInSearchKeyWordQA"
@@ -45,6 +45,7 @@
 			targetStep="false" elementActionDef="eadClickFindJobsButton"
 			pageObject="indeedCaHomepage">
 		</ate:elementStep>
+		
 		<ate:elementStep id="stepSortResultByDate"
 			stepDescription="stepSortResultByDate" stepName="stepSortResultByDate"
 			targetStep="false" elementActionDef="eadClickSortByDate"
