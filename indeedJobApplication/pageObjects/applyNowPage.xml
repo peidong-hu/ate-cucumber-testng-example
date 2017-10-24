@@ -29,35 +29,35 @@
 		elementFind="efApplicantName" elementAction="eaFilloutApplicantName">
 	</ate:elementActionDef>
 	<ate:elementFindById id="efApplicantName"
-		findByValue="applicant.name"  />
+		findByValue="input-applicant.name"  />
 	<ate:sendKeysAction id="eaFilloutApplicantName" dataValue="Peidong Hu"/>
 	
 	<ate:elementActionDef id="eadFilloutApplicantFirstName"
 		elementFind="efApplicantFirstName" elementAction="eaFilloutApplicantFirstName">
 	</ate:elementActionDef>
 	<ate:elementFindById id="efApplicantFirstName"
-		findByValue="applicant.firstName"  />
+		findByValue="input-applicant.firstName"  />
 	<ate:sendKeysAction id="eaFilloutApplicantFirstName" dataValue="Peidong"/>
 	
 	<ate:elementActionDef id="eadFilloutApplicantLastName"
 		elementFind="efApplicantLastName" elementAction="eaFilloutApplicantLastName">
 	</ate:elementActionDef>
 	<ate:elementFindById id="efApplicantLastName"
-		findByValue="applicant.lastName"  />
+		findByValue="input-applicant.lastName"  />
 	<ate:sendKeysAction id="eaFilloutApplicantLastName" dataValue="Hu"/>
 	
 	<ate:elementActionDef id="eadFilloutApplicantEmail"
 		elementFind="efApplicantEmail" elementAction="eaFilloutApplicantEmail">
 	</ate:elementActionDef>
 	<ate:elementFindById id="efApplicantEmail"
-		findByValue="applicant.email"  />
+		findByValue="input-applicant.email"  />
 	<ate:sendKeysAction id="eaFilloutApplicantEmail" dataValue="hupeidong@yahoo.com"/>
 
 	<ate:elementActionDef id="eadFilloutApplicantPhoneNumber"
 		elementFind="efApplicantPhoneNumber" elementAction="eaFilloutApplicantPhoneNumber">
 	</ate:elementActionDef>
 	<ate:elementFindById id="efApplicantPhoneNumber"
-		findByValue="applicant.phoneNumber"  />
+		findByValue="input-applicant.phoneNumber"  />
 	<ate:sendKeysAction id="eaFilloutApplicantPhoneNumber" dataValue="5148036688"/>
 	
 	<ate:elementActionDef id="eadApplyChooseFile"
@@ -72,7 +72,7 @@
 		elementFind="efMessage" elementAction="eaMessageSent">
 	</ate:elementActionDef>
 	<ate:elementFindById id="efMessage"
-		findByValue="applicant.applicationMessage"  />
+		findByValue="input-applicant.applicationMessage"  />
 	<ate:assignValueAction id="eaMessageSent" dataValue=" 1) Relocation Statement: I am now living in Eastern Time zone. I can not relocate, only accept remote working offer available to Canadian legal worker =====> 2) Career Objective: A challenging and rewarding position as a software test automation engineer using Selenium WebDriver =====> 3) Automation Skill Quick Proof: This job application was automatically submitted by my Selenium ATE automation test framework and scripts running against Indeed.com. The source code of ATE framework and the scripts could be found through this link, https://github.com/bigtester/automation-test-engine    "/>
 
 	<ate:elementActionDef id="eadSubmitResume"
