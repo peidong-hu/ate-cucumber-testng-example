@@ -26,7 +26,7 @@
 			>
 		</ate:elementStep>
 
-		<ate:elementStep id="stepFilloutApplicantFirstName"
+		<!-- <ate:elementStep id="stepFilloutApplicantFirstName"
 			stepDescription="stepFilloutApplicantFirstName" stepName="stepFilloutApplicantFirstName"
 			targetStep="false" elementActionDef="eadFilloutApplicantFirstName"
 			optionalStep="true"
@@ -38,7 +38,7 @@
 			stepDescription="stepFilloutApplicantLastName" stepName="stepFilloutApplicantLastName"
 			targetStep="false" elementActionDef="eadFilloutApplicantLastName"
 			>
-		</ate:elementStep>		
+		</ate:elementStep>		 -->
 
 		<ate:elementStep id="stepFilloutApplicantEmail"
 			stepDescription="stepFilloutApplicantEmail" stepName="stepFilloutApplicantEmail"
